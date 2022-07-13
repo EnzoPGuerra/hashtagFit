@@ -1,0 +1,164 @@
+.sobre {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 70% 30%;
+      grid-template-rows: 70% 30%;
+      grid-template-areas: "imagem textos" "imagem poligono";
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 2vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sobre img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: imagem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 28vw;
+}
+
+.sobre .sobre_textos {
+  margin-left: 0.5rem;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: textos;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.sobre .sobre_textos h2 {
+  margin-left: 1rem;
+  font-size: 3vw;
+  font-family: "Bebas Neue", cursive;
+  color: #22C900;
+}
+
+.sobre .sobre_textos .chamada {
+  font-family: "Bebas Neue", cursive;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  font-size: 5.5vw;
+  justify-items: start;
+  margin: 0 2rem 1.5rem 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sobre .sobre_textos .chamada #chamada_direita {
+  text-align: right;
+  color: #22C900;
+}
+
+.sobre .sobre_textos .chamada #chamada_direita #contraste {
+  color: #1A8C04;
+}
+
+.sobre .sobre_textos #subchamada {
+  font-size: 1.5vw;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color: #0F0E0C;
+  font-weight: 400;
+  margin: 0 1rem 2rem 1rem;
+}
+
+.sobre #sobre_infos {
+  position: relative;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.sobre #sobre_infos #sobre_poligono {
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: poligono;
+  width: 60vw;
+  right: 50rem;
+}
+
+.sobre #sobre_infos #infos {
+  position: absolute;
+  font-size: 4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  top: 50%;
+  right: 1rem;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.sobre #sobre_infos #infos span {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+}
+
+.sobre #sobre_infos #infos span .numeros {
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sobre #sobre_infos #infos span .numeros :not(:first-child) {
+  font-size: 2vw;
+  margin-left: 0.2rem;
+}
+
+.sobre #sobre_infos #infos span :not(:first-child) {
+  font-size: 1.1vw;
+  font-family: "Open Sans", sans-serif;
+}
+
+.sobre #sobre_infos #infos > span {
+  margin-left: 1rem;
+}
+
+@-webkit-keyframes poligono_animation {
+  from {
+    margin-left: 50rem;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes poligono_animation {
+  from {
+    margin-left: 50rem;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=div_sobre.css.map */

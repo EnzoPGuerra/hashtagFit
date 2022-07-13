@@ -1,0 +1,180 @@
+.atividades {
+  background: white;
+  width: 100%;
+  padding: 3rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  overflow: hidden;
+}
+
+.atividades .atividades_textos {
+  font-family: "Bebas Neue", cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  justify-items: end;
+  padding: 0 20px;
+  position: relative;
+  opacity: 0;
+}
+
+.atividades .atividades_textos img {
+  width: 20%;
+  margin-bottom: 0.5rem;
+}
+
+.atividades .atividades_textos h2 {
+  font-size: 8.5vw;
+  z-index: 1;
+  position: relative;
+  letter-spacing: -2px;
+  text-align: end;
+}
+
+.atividades .atividades_textos h3 {
+  color: #22C900;
+  font-size: 4vw;
+  color: white;
+  padding: 1vw 1.5vw;
+  background: #1A8C04;
+}
+
+.atividades .swiper_pai {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: white;
+  position: relative;
+  height: 80%;
+  width: 100%;
+  opacity: 0%;
+}
+
+.atividades .swiper_pai .swiper {
+  width: 90%;
+  padding: 0 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.atividades .swiper_pai .swiper .card {
+  position: relative;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+.atividades .swiper_pai .swiper .card .image {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.atividades .swiper_pai .swiper .card .image img {
+  height: 90%;
+  width: 92%;
+  border-radius: 20px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity: 90%;
+  z-index: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.atividades .swiper_pai .swiper .card .image img:hover {
+  opacity: 100%;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+.atividades .swiper_pai .swiper .card .image h3 {
+  position: absolute;
+  z-index: 1;
+  font-family: "Bebas Neue", cursive;
+  top: 5vw;
+  left: 2.5vw;
+  color: white;
+  font-size: 4vw;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.atividades .swiper_pai .swiper .swiper-button-prev, .atividades .swiper_pai .swiper .swiper-button-next {
+  opacity: 60%;
+  color: #1A8C04;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  margin: 0 -10px;
+}
+
+.atividades .swiper_pai .swiper .swiper-button-next:hover {
+  opacity: 100%;
+}
+
+.atividades .swiper_pai .swiper .swiper-button-prev:hover {
+  opacity: 100%;
+}
+
+@-webkit-keyframes empurraTexto {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes empurraTexto {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes empurraSwiper {
+  from {
+    margin-right: -100rem;
+  }
+  to {
+    margin-right: 0rem;
+    opacity: 100%;
+  }
+}
+
+@keyframes empurraSwiper {
+  from {
+    margin-right: -100rem;
+  }
+  to {
+    margin-right: 0rem;
+    opacity: 100%;
+  }
+}
+/*# sourceMappingURL=swiper_atividades.css.map */

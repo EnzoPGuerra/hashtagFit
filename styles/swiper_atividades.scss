@@ -1,0 +1,186 @@
+
+$verdePrincipal: #22C900;
+$verdeContraste: #1A8C04;
+$OpenSans: 'Open Sans', sans-serif;
+$Bebas: 'Bebas Neue', cursive;
+$chamadaSize: 8vw;
+$subtituloSize: 1.7vw;
+$subtituloCor: #C8CEC7;
+$botaoFontSize: 2vw;
+
+
+.atividades{
+
+    background: white;
+    width: 100%;
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
+    
+    .atividades_textos{
+
+        
+        font-family: $Bebas;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-items: end;
+        padding: 0 20px;
+        position: relative;
+        opacity: 0;
+
+        img{
+
+            width: 20%;
+            margin-bottom: 0.5rem;
+
+        }
+
+        h2{
+
+            font-size: 8.5vw;
+            z-index: 1;
+            position: relative;
+            letter-spacing: -2px;
+            text-align: end;
+                    
+        }
+
+        h3{
+
+            color: $verdePrincipal;
+            font-size: 4vw;
+            color: white;
+            padding: 1vw 1.5vw;
+            background: #1A8C04;
+        }
+
+
+    }
+
+    .swiper_pai{
+
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        position: relative;
+        height: 80%;
+        width: 100%;
+        opacity: 0%;
+    
+        .swiper{
+    
+            width: 90%;
+            padding: 0 5px;
+            box-sizing: border-box;
+    
+            .card{
+    
+                position: relative;
+                border-radius: 20px;
+                margin: 20px 0;
+    
+            }
+    
+            
+            .card .image{
+        
+                height: 100%;
+                width: 100%;
+                cursor: pointer;
+                padding: 0 10px; 
+        
+                img{
+        
+                    height: 90%;
+                    width: 92%;
+                    border-radius: 20px;
+                    transition: all 0.8s;
+                    opacity: 90%;
+                    z-index: 0;
+                    justify-content: center;
+        
+                }
+        
+                img:hover{
+        
+                    opacity: 100%;
+                    transform: scale(1.04)
+        
+                }
+
+                h3{
+
+                    position: absolute;
+                    z-index: 1;
+                    font-family: $Bebas;
+                    top: 5vw;
+                    left:2.5vw;
+                    color: white;
+                    font-size: 4vw;
+                    justify-self: center;
+                    box-sizing: border-box;
+               
+                }
+        
+        
+            }
+            
+            .swiper-button-prev, .swiper-button-next{
+        
+                opacity: 60%;
+                color: $verdeContraste;
+                transition: all 0.8s;
+                margin: 0 -10px;        
+            }
+        
+            .swiper-button-next:hover{        
+                    opacity: 100%;        
+            }
+        
+            .swiper-button-prev:hover{
+                opacity: 100%;
+        
+            }
+        }
+    }
+}
+
+//Animations
+
+@keyframes empurraTexto {
+
+    from{
+
+        opacity: 0;
+
+    } to {
+
+
+        opacity: 100%;
+
+    }
+    
+}
+
+@keyframes empurraSwiper {
+
+
+    from{
+
+        margin-right: -100rem;
+
+    } to {
+
+
+        margin-right: 0rem;
+        opacity: 100%;
+
+    }
+    
+}

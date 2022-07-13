@@ -1,0 +1,126 @@
+.beneficios {
+  background: black;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  position: relative;
+  height: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.beneficios .mens1 {
+  width: 80vw;
+  position: absolute;
+  top: -10vw;
+  left: -50vw;
+  opacity: 80%;
+}
+
+.beneficios .mens2 {
+  width: 80vw;
+  position: absolute;
+  top: -10vw;
+  left: -66.4vw;
+  opacity: 80%;
+}
+
+.beneficios .mens3 {
+  width: 80vw;
+  position: absolute;
+  bottom: -12vw;
+  right: -50vw;
+  opacity: 80%;
+}
+
+.beneficios .mens4 {
+  width: 80vw;
+  position: absolute;
+  bottom: -12vw;
+  right: -66.4vw;
+  opacity: 80%;
+}
+
+.beneficios .skull {
+  width: 80%;
+}
+
+.beneficios .beneficio {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.beneficios .beneficio img {
+  width: 8vw;
+  margin-bottom: 1vw;
+  -webkit-transition: -webkit-filter 1s;
+  transition: -webkit-filter 1s;
+  transition: filter 1s;
+  transition: filter 1s, -webkit-filter 1s;
+}
+
+.beneficios .beneficio img:hover {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  cursor: pointer;
+}
+
+.beneficios .beneficio p {
+  font-family: "Bebas Neue", cursive;
+  color: white;
+  font-size: 1.5vw;
+}
+
+.beneficios .horarios {
+  top: 9vw;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.beneficios .personalizado {
+  bottom: 11vw;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.beneficios .maquinas {
+  top: 28vw;
+  left: 10%;
+}
+
+.beneficios .duxa {
+  top: 28vw;
+  right: 14%;
+}
+
+.beneficios .acesso {
+  bottom: 28vw;
+  left: 13%;
+}
+
+.beneficios .armarios {
+  bottom: 28vw;
+  right: 14%;
+}
+/*# sourceMappingURL=beneficios.css.map */

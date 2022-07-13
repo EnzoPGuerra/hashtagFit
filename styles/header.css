@@ -1,0 +1,243 @@
+.header {
+  background-color: black;
+  width: 100%;
+  max-height: 100vh;
+}
+
+.header .superior {
+  padding: 2vw 10vw 0 10vw;
+  position: absolute;
+  z-index: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .superior img {
+  width: 8vw;
+}
+
+.header .superior nav {
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.header .superior nav div {
+  font-family: "Open Sans", sans-serif;
+  border-bottom: white solid 2px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 1rem;
+  padding-bottom: 0.2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .superior nav div strong {
+  color: #22C900;
+  font-weight: 600;
+}
+
+.header .superior nav div a img {
+  max-width: 1rem;
+  margin-left: 0.2rem;
+}
+
+.header .superior nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  font-family: "Bebas Neue", cursive;
+  padding-top: 0.5vw;
+}
+
+.header .superior nav ul :first-child {
+  margin-right: 0.5vw;
+}
+
+.header .superior nav ul li + li {
+  margin: 0 0.5vw;
+}
+
+.header .superior nav ul :last-child {
+  margin-right: 0;
+}
+
+.header .superior nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header .superior nav ul li :hover {
+  color: #22C900;
+  cursor: pointer;
+}
+
+.slider {
+  width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+.slider .slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 300%;
+}
+
+.slider .slides input {
+  display: none;
+}
+
+.slider .slides .slide {
+  width: 33.33%;
+  position: relative;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.slider .slides .slide img {
+  width: 100%;
+}
+
+.slider .slides .slide div {
+  position: absolute;
+  top: 56%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 5vw;
+  z-index: 2;
+  color: white;
+  width: 32vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.slider .slides .slide div h1 {
+  font-family: "Bebas Neue", cursive;
+  color: white;
+  font-size: 6vw;
+}
+
+.slider .slides .slide div h2 {
+  font-family: "Open Sans", sans-serif;
+  color: #C8CEC7;
+  font-size: 1.7vw;
+}
+
+.slider .slides .slide div button {
+  background: transparent;
+  margin-top: 1.5rem;
+  width: 21vw;
+  color: #22C900;
+  font-size: 2vw;
+  border: solid 0.2rem #22C900;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: -1px;
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+
+.slider .slides .slide div button:hover {
+  color: #1A8C04;
+  border: solid 0.2rem #1A8C04;
+  cursor: pointer;
+}
+
+.slider .manual-navegation {
+  position: absolute;
+  right: 2vw;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.slider .manual-navegation .manual_btn {
+  width: 3rem;
+  height: 0.3rem;
+  background: white;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.slider .manual-navegation .btn1 {
+  width: 3.5rem;
+  height: 0.35rem;
+  background: #22C900;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.slider .manual-navegation .btn2 {
+  width: 3.5rem;
+  height: 0.35rem;
+  background: #22C900;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.slider .manual-navegation .btn3 {
+  width: 3.5rem;
+  height: 0.35rem;
+  background: #22C900;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.slider .manual-navegation label:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+.slider .manual-navegation label:hover {
+  background: #22C900;
+}
+
+.slider #slide1:checked ~ .slide {
+  right: 0;
+}
+
+.slider #slide2:checked ~ .slide {
+  right: 33%;
+}
+
+.slider #slide3:checked ~ .slide {
+  right: 66.66%;
+}
+/*# sourceMappingURL=header.css.map */

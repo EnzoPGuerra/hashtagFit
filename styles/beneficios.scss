@@ -1,0 +1,135 @@
+$verdePrincipal: #22C900;
+$verdeContraste: #1A8C04;
+$OpenSans: 'Open Sans', sans-serif;
+$Bebas: 'Bebas Neue', cursive;
+$chamadaSize: 6vw;
+$subtituloSize: 1.7vw;
+$subtituloCor: #C8CEC7;
+$botaoFontSize: 2vw;
+$subchamadaCor: #0F0E0C;
+
+.beneficios{
+
+    background: black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    position: relative;
+    height: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .mens1{
+
+        width:80vw;
+        position: absolute;
+        top: -10vw;
+        left: -50vw;
+        opacity: 80%;
+    }
+
+    .mens2{
+
+        width:80vw;
+        position: absolute;
+        top: -10vw;
+        left: -66.4vw;
+        opacity: 80%;
+    }
+
+    .mens3{
+
+        width:80vw;
+        position: absolute;
+        bottom: -12vw;
+        right: -50vw;
+        opacity: 80%;
+    }
+
+    .mens4{
+
+        width:80vw;
+        position: absolute;
+        bottom: -12vw;
+        right: -66.4vw;
+        opacity: 80%;
+    }
+
+    .skull{
+
+        width: 80%;
+
+    }
+
+    .beneficio{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        img{
+
+                width: 8vw;
+                margin-bottom: 1vw;
+                transition: filter 1s;
+
+                
+            &:hover{
+
+            filter: brightness(50%);
+            cursor: pointer;
+
+            }
+    
+
+        }
+
+        p{
+
+            font-family: $Bebas;
+            color: white;
+            font-size: 1.5vw;
+        }
+
+    }   
+
+    .horarios{
+
+        top: 9vw;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .personalizado{
+
+        bottom: 11vw;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .maquinas{
+
+        top: 28vw;
+        left: 10%;
+    }
+
+    .duxa{
+        
+        top: 28vw;
+        right: 14%;
+
+    }
+
+    .acesso{
+        bottom: 28vw;
+        left: 13%;
+    }
+
+    .armarios{
+        bottom: 28vw;
+        right: 14%;
+    }
+
+}
