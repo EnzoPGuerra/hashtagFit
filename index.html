@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#Fit</title>
+
+    <!-- Fonte --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kavivanar&family=Open+Sans:ital,wght@0,400;0,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Estilos -->           
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/div_sobre.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./styles/swiper_atividades.css">
+    <link rel="stylesheet" href="./styles/imc.css">
+    <link rel="stylesheet" href="./styles/contato.css">
+    <link rel="stylesheet" href="./styles/beneficios.css">
+
+</head>
+<body>
+    
+    <!--cabeçalho + navegation-->
+    <header class="header">
+        <div class="superior">
+            <img src="./Assets/Imagens/logo_fit.png" alt="" srcset="">
+            <nav>
+                <div>
+                    <span>
+                        <strong>Contate-nos</strong> (11) 99632-3195
+                    </span>
+                    <span>
+                        <a href="#"><img src="./Assets/Imagens/logo_fb.png" alt="" srcset=""></a>
+                        <a href="#"><img src="./Assets/Imagens/logo_ig.png" alt="" srcset=""></a>
+                    </span>
+                </div>
+                <ul>
+                    <li> <a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Classes</a></li>
+                    <li><a href="#">Horários</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>        
+    </header>
+
+    <!--slider-->
+    <div class="slider" id="sobre_div">
+
+        <div class="slides">
+
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+
+            <div class="slide" class: s1>
+                <img src="./Assets/Imagens/bg1.png" alt="leg_press">
+                <div>
+                    <h1>CONSTRUA SEU CORPO PERFEITO</h1>
+                    <h2>Sua vida pode mudar complemente com apenas uma decisão!</h2>
+                    <button disabled="disabled">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./Assets/Imagens/bg2.png" alt="agachamento">
+                <div>
+                    <h1>liberte seu verdadeiro eu!</h1>
+                    <h2>Você possui uma força inimaginável e nós te ajudamos à libertar ela.</h2>
+                    <button disabled="disabled">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./Assets/Imagens/bg3.png" alt="abdominal">
+                <div>
+                    <h1>transforme sua saúde!</h1>
+                    <h2>Mens sana in corpore sano <br> Seu corpo define quem você é!</h2>
+                    <button disabled="disabled">Saiba Mais</button>
+                </div>
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="manual-navegation">
+                <label for="slide1" class="manual_btn" id="btn1"></label>
+                <label for="slide2" class="manual_btn" id="btn2"></label>
+                <label for="slide3" class="manual_btn" id="btn3"></label>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <!--sobre-->
+    <div class="sobre">
+        <img src="./Assets/Imagens/crossfiteiro.png" alt="" srcset="">
+        <div class="sobre_textos">
+            <h2 id="titulo">SOBRE NÓS</h2>
+            <span class="chamada">
+                <h3 id="chamada_esquerda">mAIS QUE UMA ACADEMIA... </h3>
+                <h3 id="chamada_direita">UM <span id="contraste">CENTRO DE CONQUISTA</span> DE OBJETIVOS</h3>
+            </span>
+            <p id="subchamada">Localizada nos interiores da Vila Progresso... <br> Aqui não só te ajudamos à enxergar seus objetivos, mas também te ajudamos durante toda jornada até a conquista!
+            </p>
+        </div>
+        <div id="sobre_infos">
+            <img src="./Assets/Imagens/local_info_sobre.svg" alt="" srcset="" id="sobre_poligono">
+                <div id="infos">
+                    <span>
+                        <span class="numeros">
+                            <p id="numero_experiencia"></p><p>+</p>
+                        </span>
+                            <p>ANOS DE EXPERIÊNCIA</p>
+                    </span>
+                    <span>
+                        <span class="numeros">
+                            <p id="numero_atividades"></p><p>+</p>
+                        </span>
+                            <p>TIPOS DE ATIVIDADES</p>
+                    </span>
+                    <span>
+                        <span class="numeros">
+                            <p id="numero_clientes"></p><p>+</p>
+                        </span>
+                            <p>CLIENTES SATISFEITOS</p>
+                    </span>
+                </div>
+        </div>
+    </div>
+
+    <!--atvidades-->
+    <section class="atividades">
+
+        <div class="atividades_textos" id="atividadesTextosBloco">
+            <img src="./Assets/Imagens/sublinhado_atividades1.svg" alt="" srcset="">
+             <h2>Faça um treino Grátis</h2>
+             <h3>Nossas Atividades</h3>
+        </div>
+        
+        <div class="swiper_pai" id="swiper_bloco">
+            <div class="swiper mySwiper container">
+                <div class="swiper-wrapper content">
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <h3>Academia</h3>
+                                <img src="./Assets/Imagens/ativ_academia.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <h3>Funcional</h3>
+                                <img src="./Assets/Imagens/ativ_funcional.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <h3>Muay-Thai</h3>
+                                <img src="./Assets/Imagens/ativ_muay.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <h3>Ritmos</h3>
+                                <img src="./Assets/Imagens/ativ_ritmo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <h3>Dança do Ventre</h3>
+                                <img src="./Assets/Imagens/ativ_ventre.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
+            </div> 
+        </div>
+    </section>
+
+    <section class="beneficios">
+
+        <img class="mens1" src="./Assets/Imagens/mens_sana_bg.png" ></img>
+
+        <img class="mens2" src="./Assets/Imagens/mens_sana_bg.png" ></img>
+
+        <img class="mens3" src="./Assets/Imagens/mens_sana_bg.png" ></img>
+
+        <img class="mens4" src="./Assets/Imagens/mens_sana_bg.png" ></img>
+
+        <img src="./Assets/Imagens/skull.png" alt="" class="skull">
+
+        <div class="horarios beneficio">
+            <img src="./Assets/Imagens/calendar.png" alt="" srcset="" class="beneficio_img">
+            <p>Horários Flexíveis</p>
+        </div>
+        <div class="duxa beneficio">
+            <img src="./Assets/Imagens/duxa.png" alt="" srcset="" class="beneficio_img">
+            <p>Banheiros com Ducha</p>
+        </div>
+        <div class="armarios beneficio">
+            <img src="./Assets/Imagens/locker.png" alt="" srcset="" class="beneficio_img">
+            <p>Armários</p>
+        </div>
+        <div class="personalizado beneficio">
+            <img src="./Assets/Imagens/alvo.png" alt="" srcset="" class="beneficio_img">
+            <p>Treino Personalizado</p>
+        </div>
+        <div class="acesso beneficio">
+            <img src="./Assets/Imagens/loc.png" alt="" srcset="" class="beneficio_img">
+            <p>Fácil Acesso</p>
+        </div>
+        <div class="maquinas beneficio">
+            <img src="./Assets/Imagens/aparelho.png" alt="" srcset="" class="beneficio_img">
+            <p>Máquinas Especializadas</p>
+        </div>
+
+    </section>
+
+    <!--IMC-->
+    <section class="imc">
+    
+        <div class="calculo">
+            
+            <div class="calcular">
+
+                <div class="chamada">
+                    <p id="calcule">Calcule Seu</p>
+                    <p id="calcule_imc">IMC</p>
+                </div>
+
+                <div class="inputs">
+                    <input type="number" name="altura" id="altura" placeholder="Altura (cm)">
+
+                    <input type="number" name="peso" id="peso" placeholder="Peso (kg)">
+                </div>
+                <div class="numero_botao">
+                    <div class="resultado_numero" id="numero_resultado">00.00</div>
+                    <button id="botao">Calcular</button>
+                </div>
+            </div>
+
+            <ul class="resultado">
+                <li id="abaixoPeso">
+                    <p>Abaixo do Peso</p>
+                    <p>abaixo de <span class="resultados_contraste">18,5</span></p> 
+                </li>
+                <li id="normal">
+                    <p>Normal</p>
+                    <p>entre <span class="resultados_contraste">18,5</span> e <span class="resultados_contraste">24,9</span></p>   
+                </li>
+                <li id="sobrepeso">
+                    <p>Sobrepeso</p>
+                    <p>entre <span class="resultados_contraste">25</span> e <span class="resultados_contraste">29,9</span></p> 
+                </li>
+                <li id="obesidade">
+                    <p>Obesidade</p>
+                    <p>entre <span class="resultados_contraste">30</span> e <span class="resultados_contraste">39,9</span></p>    
+                </li>
+                <li id="obesidadeGrave">
+                    <p>Obesidade Grave</p>
+                    <p>maior que <span class="resultados_contraste">40</span></p>  
+                </li>  
+            </ul>
+        </div>
+
+        <div class="foto">
+            <img src="./Assets/Imagens/imc_foto.png" alt="" srcset="">
+        </div>
+    
+    </section>
+
+    <!--Contato-->
+    <section class="contato">
+        <div class="contato_infos">
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.9770534632594!2d-46.87394654898971!3d-23.207506854431553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf2722d3e9e19b%3A0x8bd3b7018975f308!2sAcademia%20%23FIT!5e0!3m2!1sen!2sbr!4v1657104513865!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>>
+            </div>
+            <div class="endereço">
+                <img src="./Assets/Imagens/contato_local.png" alt="" srcset="">
+                    <p>Rua Zuferey 128, Vila Progresso</p>
+            </div>
+            <div class="telefone">
+                <img src="./Assets/Imagens/contato_msg.png" alt="" srcset="">
+                <p>(11)99632-3195</p>
+            </div>
+            <div class="horario">
+                <img src="./Assets/Imagens/contato_horario.png" alt="" srcset="">
+                <p>06H - 23H</p>
+            </div>
+            <div class="email">
+                <img src="./Assets/Imagens/contato_email.png" alt="" srcset="">
+                <p>hashtagfitjundiai@gmail.com</p>
+            </div>
+            <div class="redesSociais">
+                <a href="#">
+                    <img src="./Assets/Imagens/contato_fb.png" alt="" srcset="">
+                </a>
+                <a href="#">
+                    <img src="./Assets/Imagens/contato_insta.png" alt="" srcset="">
+                </a>
+            </div>
+        </div>
+        <div class="contato_chamada">
+            <h3>contato</h3>
+        </div>
+    </section>
+
+ <script src="./js/header.js"></script>
+ <script src="./js/sobre.js"></script>
+ <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+ <script src="js/swiper._atividades.js"></script>
+ <script src="./js/imc.js"></script>
+
+</body>
+</html>
