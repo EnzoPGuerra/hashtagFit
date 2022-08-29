@@ -1,0 +1,178 @@
+$verdePrincipal: #22C900;
+$verdeContraste: #1A8C04;
+$OpenSans: 'Open Sans', sans-serif;
+$Bebas: 'Bebas Neue', cursive;
+$chamadaSize: 6vw;
+$subtituloSize: 1.7vw;
+$subtituloCor: #C8CEC7;
+$botaoFontSize: 2vw;
+$subchamadaCor: #0F0E0C;
+
+.horarios{
+
+    background: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+
+    .titulos{
+
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 49vw;
+
+        div{
+
+            display: flex;
+            align-items: center;
+
+            h2{
+
+                font-family: $Bebas;
+                color: $verdePrincipal;
+                font-size: 7vw;
+                margin-right: 1vw;
+
+            }
+    
+            p{
+                font-family: $OpenSans;
+                font-size: 1.7vw;
+
+                span{
+
+                    color: #22C900;
+                    font-weight:800;
+
+                }
+    
+             
+            }
+
+        }
+
+        p{
+                
+            font-family: $OpenSans;
+            font-size: 1.7vw;
+
+            span{
+
+                color: #22C900;
+                font-weight:800;
+
+            }
+
+
+        }
+
+    }
+
+    .dias{
+
+        display: flex;
+        margin-left: 4vw;
+
+            .blocos_dia{
+
+                    margin: 5vw 0 3vw 2vw;
+
+                    :first-child{
+
+                        margin-left: 0;
+
+                    }
+
+                    .dia{
+                    
+                        font-family: $OpenSans;
+                        font-weight: 800;
+                        position: absolute;
+                        z-index: 2;
+                        right: 50%;
+                        top: -1vw;
+                        font-size: 1.5vw;
+                            
+                    }
+
+                    .sab{
+
+                        font-family: $OpenSans;
+                        font-weight: 800;
+                        margin: 1vw 0 0 5vw;
+                        margin-left: 58%;
+                        transform: translateX(-50%);
+                        font-size: 1.5vw;
+
+                    }
+
+                    .blocos{
+
+                        display: block;
+                        position: relative;
+                        width: 15vw;
+
+                        .bloco{
+
+                            width: 15vw;
+
+                            .imagem{
+
+                                position: relative;
+
+                                p{
+                                    position: absolute;
+                                    z-index: 1;
+                                    color: white;
+                                    font-family: $Bebas;
+                                    top: 50%;
+                                    transform: translateY(-70%);
+                                    margin-left: 1vw;
+
+
+                                }
+
+                                img{
+
+                                    width: 15vw;
+
+                                }
+                            
+                            }
+
+                            .numero{
+
+                                position: relative;
+                                width: 65%;
+                                margin-top: -3vw;
+                                    
+                            
+                                img{
+
+                                    width: 100%;
+                                    
+                                }
+
+                                p{
+
+                                    position: absolute;
+                                    right: 50%;
+                                    top: 50%;
+                                    transform: translate(40%,-50%);
+                                    font-family: $Bebas;
+                                    color: white;
+                                    font-size: 2vw;
+                                }            
+                            }
+                        
+
+                        }
+
+                    }
+            }
+        }
+
+}

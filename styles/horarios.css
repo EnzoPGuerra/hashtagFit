@@ -1,0 +1,150 @@
+.horarios {
+  background: white;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2vw;
+}
+
+.horarios .titulos {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 49vw;
+}
+
+.horarios .titulos div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.horarios .titulos div h2 {
+  font-family: "Bebas Neue", cursive;
+  color: #22C900;
+  font-size: 7vw;
+  margin-right: 1vw;
+}
+
+.horarios .titulos div p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.7vw;
+}
+
+.horarios .titulos div p span {
+  color: #22C900;
+  font-weight: 800;
+}
+
+.horarios .titulos p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.7vw;
+}
+
+.horarios .titulos p span {
+  color: #22C900;
+  font-weight: 800;
+}
+
+.horarios .dias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 4vw;
+}
+
+.horarios .dias .blocos_dia {
+  margin: 5vw 0 3vw 2vw;
+}
+
+.horarios .dias .blocos_dia :first-child {
+  margin-left: 0;
+}
+
+.horarios .dias .blocos_dia .dia {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  position: absolute;
+  z-index: 2;
+  right: 50%;
+  top: -1vw;
+  font-size: 1.5vw;
+}
+
+.horarios .dias .blocos_dia .sab {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  margin: 1vw 0 0 5vw;
+  margin-left: 58%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 1.5vw;
+}
+
+.horarios .dias .blocos_dia .blocos {
+  display: block;
+  position: relative;
+  width: 15vw;
+}
+
+.horarios .dias .blocos_dia .blocos .bloco {
+  width: 15vw;
+}
+
+.horarios .dias .blocos_dia .blocos .bloco .imagem {
+  position: relative;
+}
+
+.horarios .dias .blocos_dia .blocos .bloco .imagem p {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  top: 50%;
+  -webkit-transform: translateY(-70%);
+          transform: translateY(-70%);
+  margin-left: 1vw;
+}
+
+.horarios .dias .blocos_dia .blocos .bloco .imagem img {
+  width: 15vw;
+}
+
+.horarios .dias .blocos_dia .blocos .bloco .numero {
+  position: relative;
+  width: 65%;
+  margin-top: -3vw;
+}
+
+.horarios .dias .blocos_dia .blocos .bloco .numero img {
+  width: 100%;
+}
+
+.horarios .dias .blocos_dia .blocos .bloco .numero p {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  -webkit-transform: translate(40%, -50%);
+          transform: translate(40%, -50%);
+  font-family: "Bebas Neue", cursive;
+  color: white;
+  font-size: 2vw;
+}
+/*# sourceMappingURL=horarios.css.map */

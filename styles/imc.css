@@ -48,6 +48,7 @@
           box-sizing: border-box;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+  padding-top: 5vw;
 }
 
 .imc .calculo .calcular {
